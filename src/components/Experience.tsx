@@ -1,54 +1,36 @@
-import { Briefcase, GraduationCap, Award } from "lucide-react";
+import { Briefcase, GraduationCap } from "lucide-react";
 
 const experiences = [
   {
-    type: "work",
-    title: "Senior Full Stack Developer",
-    company: "Tech Company",
-    period: "2022 - Present",
-    description: "Leading development of scalable web applications using React, Node.js, and cloud technologies. Mentoring junior developers and implementing best practices.",
-    skills: ["React", "Node.js", "AWS", "TypeScript"],
-  },
-  {
-    type: "work",
-    title: "VLSI Design Engineer",
-    company: "Semiconductor Corp",
-    period: "2020 - 2022",
-    description: "Designed and verified RTL modules for high-performance processors. Worked on timing optimization and power reduction strategies.",
-    skills: ["Verilog", "SystemVerilog", "Cadence", "FPGA"],
-  },
-  {
-    type: "work",
-    title: "Software Developer",
-    company: "Startup Inc",
-    period: "2018 - 2020",
-    description: "Built full-stack web applications from scratch. Implemented RESTful APIs and integrated third-party services.",
-    skills: ["JavaScript", "Python", "MongoDB", "Docker"],
+    title: "VHDL Intern",
+    company: "IIEST Shibpur, Kolkata",
+    period: "Internship",
+    description:
+      "Worked on VHDL-based digital design concepts. Learned basics of RTL design, simulation, and digital electronics. Improved technical understanding and communication through regular discussions with mentors.",
+    skills: ["VHDL", "Digital Electronics", "RTL Basics"],
   },
 ];
 
 const education = [
   {
-    type: "education",
-    title: "Master's in Electronics Engineering",
-    institution: "Technical University",
-    period: "2016 - 2018",
-    description: "Specialized in VLSI Design and Digital Systems. Thesis on low-power circuit design techniques.",
+    title: "B.Tech – 3rd Year Student",
+    institution: "JK Lakshmimat University",
+    period: "Ongoing",
+    description:
+      "Currently pursuing Bachelor of Technology with interest in VLSI and digital design.",
   },
   {
-    type: "education",
-    title: "Bachelor's in Computer Science",
-    institution: "Engineering College",
-    period: "2012 - 2016",
-    description: "Strong foundation in programming, algorithms, and software engineering principles.",
+    title: "Class 12 (Senior Secondary)",
+    institution: "Bihar School Examination Board (BSEB)",
+    period: "Completed",
+    description: "Secured 72% marks in Class 12 examination.",
   },
-];
-
-const certifications = [
-  "AWS Certified Solutions Architect",
-  "Google Cloud Professional",
-  "Cadence Certified Designer",
-  "MongoDB Developer Certificate",
+  {
+    title: "Class 10 (Secondary)",
+    institution: "Bihar School Examination Board (BSEB)",
+    period: "Completed",
+    description: "Secured 74% marks in Class 10 examination.",
+  },
 ];
 
 const Experience = () => {
@@ -61,37 +43,39 @@ const Experience = () => {
             Experience & <span className="gradient-text">Education</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A timeline of my professional growth, from academic foundations to industry expertise.
+            Academic background and internship experience as a third-year engineering student.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {/* Work Experience */}
+          {/* Experience */}
           <div>
             <div className="flex items-center gap-3 mb-8">
               <div className="p-2 rounded-lg gradient-bg">
                 <Briefcase className="w-5 h-5 text-primary-foreground" />
               </div>
-              <h3 className="text-2xl font-bold">Work Experience</h3>
+              <h3 className="text-2xl font-bold">Experience</h3>
             </div>
 
             <div className="relative">
-              {/* Timeline line */}
               <div className="absolute left-4 top-0 bottom-0 w-px bg-border" />
 
               <div className="space-y-8">
                 {experiences.map((exp, index) => (
                   <div key={index} className="relative pl-12">
-                    {/* Timeline dot */}
                     <div className="absolute left-2 top-2 w-4 h-4 rounded-full gradient-bg ring-4 ring-background" />
 
                     <div className="p-6 rounded-2xl glass hover:bg-primary/5 transition-colors">
                       <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
                         <h4 className="font-semibold text-lg">{exp.title}</h4>
-                        <span className="text-sm text-primary font-medium">{exp.period}</span>
+                        <span className="text-sm text-primary font-medium">
+                          {exp.period}
+                        </span>
                       </div>
                       <p className="text-muted-foreground mb-3">{exp.company}</p>
-                      <p className="text-sm text-muted-foreground mb-4">{exp.description}</p>
+                      <p className="text-sm text-muted-foreground mb-4">
+                        {exp.description}
+                      </p>
                       <div className="flex flex-wrap gap-2">
                         {exp.skills.map((skill) => (
                           <span
@@ -109,59 +93,35 @@ const Experience = () => {
             </div>
           </div>
 
-          {/* Education & Certifications */}
-          <div className="space-y-12">
-            {/* Education */}
-            <div>
-              <div className="flex items-center gap-3 mb-8">
-                <div className="p-2 rounded-lg gradient-bg">
-                  <GraduationCap className="w-5 h-5 text-primary-foreground" />
-                </div>
-                <h3 className="text-2xl font-bold">Education</h3>
+          {/* Education */}
+          <div>
+            <div className="flex items-center gap-3 mb-8">
+              <div className="p-2 rounded-lg gradient-bg">
+                <GraduationCap className="w-5 h-5 text-primary-foreground" />
               </div>
-
-              <div className="relative">
-                <div className="absolute left-4 top-0 bottom-0 w-px bg-border" />
-
-                <div className="space-y-8">
-                  {education.map((edu, index) => (
-                    <div key={index} className="relative pl-12">
-                      <div className="absolute left-2 top-2 w-4 h-4 rounded-full gradient-bg ring-4 ring-background" />
-
-                      <div className="p-6 rounded-2xl glass hover:bg-primary/5 transition-colors">
-                        <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
-                          <h4 className="font-semibold text-lg">{edu.title}</h4>
-                          <span className="text-sm text-primary font-medium">{edu.period}</span>
-                        </div>
-                        <p className="text-muted-foreground mb-3">{edu.institution}</p>
-                        <p className="text-sm text-muted-foreground">{edu.description}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              <h3 className="text-2xl font-bold">Education</h3>
             </div>
 
-            {/* Certifications */}
-            <div>
-              <div className="flex items-center gap-3 mb-8">
-                <div className="p-2 rounded-lg gradient-bg">
-                  <Award className="w-5 h-5 text-primary-foreground" />
-                </div>
-                <h3 className="text-2xl font-bold">Certifications</h3>
-              </div>
-
-              <div className="grid gap-3">
-                {certifications.map((cert, index) => (
-                  <div
-                    key={index}
-                    className="p-4 rounded-xl glass hover:bg-primary/5 transition-colors flex items-center gap-3"
-                  >
-                    <div className="w-2 h-2 rounded-full gradient-bg" />
-                    <span className="font-medium">{cert}</span>
+            <div className="space-y-6">
+              {education.map((edu, index) => (
+                <div
+                  key={index}
+                  className="p-6 rounded-2xl glass hover:bg-primary/5 transition-colors"
+                >
+                  <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <h4 className="font-semibold text-lg">{edu.title}</h4>
+                    <span className="text-sm text-primary font-medium">
+                      {edu.period}
+                    </span>
                   </div>
-                ))}
-              </div>
+                  <p className="text-muted-foreground mb-2">
+                    {edu.institution}
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    {edu.description}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

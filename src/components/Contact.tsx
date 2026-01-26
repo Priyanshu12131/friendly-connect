@@ -73,7 +73,7 @@ const Contact = () => {
                 <div>
                   <p className="text-sm text-muted-foreground">Email</p>
                   <a href="mailto:priyanshu@example.com" className="font-medium hover:text-primary transition-colors">
-                    priyanshu@example.com
+                    priyanshuk7839@gmail.com
                   </a>
                 </div>
               </div>
@@ -85,7 +85,7 @@ const Contact = () => {
                 <div>
                   <p className="text-sm text-muted-foreground">Phone</p>
                   <a href="tel:+1234567890" className="font-medium hover:text-primary transition-colors">
-                    +1 (234) 567-890
+                    +91 9162132852
                   </a>
                 </div>
               </div>
@@ -96,7 +96,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="font-medium">Your City, Country</p>
+                  <p className="font-medium">Jaipur, India</p>
                 </div>
               </div>
             </div>
@@ -106,7 +106,7 @@ const Contact = () => {
               <h4 className="font-semibold mb-4">Follow Me</h4>
               <div className="flex gap-4">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/Priyanshu12131"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-4 rounded-xl glass hover:bg-primary/10 transition-colors group"
@@ -114,7 +114,7 @@ const Contact = () => {
                   <Github className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/priyanshu-kumar-b652992b4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-4 rounded-xl glass hover:bg-primary/10 transition-colors group"
@@ -131,7 +131,7 @@ const Contact = () => {
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-2">
-                    Your Name
+                    Priyanshu Kumar
                   </label>
                   <Input
                     id="name"
@@ -145,7 +145,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium mb-2">
-                    Email Address
+                   Priyanshuk7839@gmail.com
                   </label>
                   <Input
                     id="email"

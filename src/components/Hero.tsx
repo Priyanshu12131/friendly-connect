@@ -22,7 +22,7 @@ const Hero = () => {
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 animate-slide-up opacity-0 stagger-1">
             Hi, I'm{" "}
-            <span className="gradient-text">Priyanshu</span>
+            <span className="gradient-text">Priyanshu Kumar</span>
           </h1>
 
           {/* Subtitle */}
@@ -58,7 +58,7 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex items-center gap-6 animate-slide-up opacity-0 stagger-5">
             <a
-              href="https://github.com"
+              href="https://github.com/Priyanshu12131"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full glass hover:bg-primary/20 transition-colors group"
@@ -66,7 +66,7 @@ const Hero = () => {
               <Github className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/priyanshu-kumar-b652992b4/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full glass hover:bg-primary/20 transition-colors group"
@@ -74,7 +74,7 @@ const Hero = () => {
               <Linkedin className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
             <a
-              href="mailto:priyanshu@example.com"
+              href="mailto:priyanshuk7839@gmail.com"
               className="p-3 rounded-full glass hover:bg-primary/20 transition-colors group"
             >
               <Mail className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" />

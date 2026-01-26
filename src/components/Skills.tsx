@@ -23,14 +23,14 @@ const skills = [
   { name: "Python", level: 85, category: "backend" },
   { name: "PostgreSQL", level: 80, category: "backend" },
   { name: "MongoDB", level: 82, category: "backend" },
-  { name: "REST APIs", level: 90, category: "backend" },
-  { name: "GraphQL", level: 75, category: "backend" },
+  // { name: "REST APIs", level: 90, category: "backend" },
+  // { name: "GraphQL", level: 75, category: "backend" },
   
   // VLSI
   { name: "Verilog", level: 90, category: "vlsi" },
   { name: "SystemVerilog", level: 85, category: "vlsi" },
   { name: "VHDL", level: 75, category: "vlsi" },
-  { name: "Cadence Tools", level: 80, category: "vlsi" },
+  // { name: "Cadence Tools", level: 80, category: "vlsi" },
   { name: "FPGA Design", level: 85, category: "vlsi" },
   { name: "RTL Design", level: 88, category: "vlsi" },
   
@@ -40,7 +40,7 @@ const skills = [
   { name: "Linux", level: 85, category: "tools" },
   { name: "VS Code", level: 95, category: "tools" },
   { name: "Figma", level: 70, category: "tools" },
-  { name: "AWS", level: 72, category: "tools" },
+  // { name: "AWS", level: 72, category: "tools" },
 ];
 
 const Skills = () => {
