@@ -1,3 +1,16 @@
+/* Highlight animation for search scroll */
+.search-highlight {
+  animation: searchHighlightFlash 1.2s cubic-bezier(0.4,0,0.2,1);
+  box-shadow: 0 0 0 4px hsl(var(--primary) / 0.7), 0 2px 24px hsl(var(--primary) / 0.2);
+  z-index: 10;
+  position: relative;
+}
+
+@keyframes searchHighlightFlash {
+  0% { background: hsl(var(--primary) / 0.15); }
+  60% { background: hsl(var(--primary) / 0.25); }
+  100% { background: transparent; }
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

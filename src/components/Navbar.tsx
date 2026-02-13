@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import SearchBar from "./SearchBar";
 
 const navLinks = [
   { name: "About", href: "#about" },
@@ -42,7 +43,10 @@ const Navbar = () => {
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-8 w-full justify-end">
+            <div className="mr-6 w-64 max-w-xs">
+              <SearchBar />
+            </div>
             {navLinks.map((link) => (
               <button
                 key={link.name}
@@ -70,6 +74,9 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden mt-4 pb-4 animate-fade-in">
+            <div className="mb-4">
+              <SearchBar />
+            </div>
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <button
